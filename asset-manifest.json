@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/gustavogalo/galo-woodworking/static/js/main.928587b7.js",
-    "static/media/section_image.jpg": "/gustavogalo/galo-woodworking/static/media/section_image.14da19a1a10c2ddabb7d.jpg",
-    "index.html": "/gustavogalo/galo-woodworking/index.html",
-    "main.928587b7.js.map": "/gustavogalo/galo-woodworking/static/js/main.928587b7.js.map"
+    "main.js": "/galo-woodworking/static/js/main.2fc123dd.js",
+    "static/media/section_image.jpg": "/galo-woodworking/static/media/section_image.14da19a1a10c2ddabb7d.jpg",
+    "index.html": "/galo-woodworking/index.html",
+    "main.2fc123dd.js.map": "/galo-woodworking/static/js/main.2fc123dd.js.map"
   },
   "entrypoints": [
-    "static/js/main.928587b7.js"
+    "static/js/main.2fc123dd.js"
   ]
 }
