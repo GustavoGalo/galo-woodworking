@@ -25,6 +25,14 @@ import {
 } from './styles';
 
 import SectionImage from './assets/section_image.jpg';
+import HackImage from './assets/hack.jpg';
+import KittenImage from './assets/kitten.jpg';
+import ClosetImage from './assets/closet.jpg';
+import OtherKittenImage from './assets/kitten2.jpg';
+import OtherClosetImage from './assets/closet2.jpg';
+import PaneImage from './assets/pane.jpg';
+import BenchImage from './assets/bench.jpg';
+
 import { TextInput } from './components/TextInput';
 
 export const App: React.FC = () => {
@@ -50,9 +58,9 @@ export const App: React.FC = () => {
           <LithHeading>MÓVEIS PLANEJADOS</LithHeading>
         </CentedBox>
         <FlexDisplay>
-          <MinnorImage src={SectionImage} />
-          <MinnorImage src={SectionImage} />
-          <MinnorImage src={SectionImage} />
+          <MinnorImage src={OtherClosetImage} />
+          <MinnorImage src={KittenImage} />
+          <MinnorImage src={ClosetImage} />
         </FlexDisplay>
       </Section>
       <Section>
@@ -69,11 +77,11 @@ export const App: React.FC = () => {
         </CentedBox>
         <DisplayWrapper>
           <LeftArea>
-            <Image src={SectionImage} />
-            <Image src={SectionImage} />
+            <Image src={PaneImage} />
+            <Image src={OtherKittenImage} />
           </LeftArea>
           <RightArea>
-            <Image src={SectionImage} />
+            <Image src={HackImage} />
           </RightArea>
         </DisplayWrapper>
       </Section>
@@ -82,10 +90,10 @@ export const App: React.FC = () => {
       </BlackedSection>
       <Section>
         <DisplayWrapper>
-          <LeftArea>
-            <Image src={SectionImage} />
+          <LeftArea hideOnBreak>
+            <Image src={BenchImage} />
           </LeftArea>
-          <RightArea>
+          <RightArea hideOnBreak>
             <Form>
               <TextInput label='NOME' value={name} onValueChange={setName} />
               <TextInput label='E-MAIL' value={email} onValueChange={setEmail} />

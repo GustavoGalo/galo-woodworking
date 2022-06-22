@@ -82,6 +82,7 @@ export const FlexDisplay = styled.div`
 
 export const MinnorImage = styled.img<IImageProps>`
   width: 300px;
+  height: 300px;
 
   background-size: cover;
   background-position: center;
@@ -118,17 +119,29 @@ export const DisplayWrapper = styled.div`
   padding: 1rem;
 `;
 
-export const LeftArea = styled.div`
+interface IAreaProps {
+  hideOnBreak?: boolean;
+}
+
+export const LeftArea = styled.div<IAreaProps>`
   width: 50%;
 
   display: flex;
   flex-direction: column;
 
   gap: 1rem;
+
+  @media (max-width: 1024px) {
+    width: ${(props) => (props.hideOnBreak ? 0 : '50%')};
+  }
 `;
 
-export const RightArea = styled.div`
+export const RightArea = styled.div<IAreaProps>`
   width: 50%;
+
+  @media (max-width: 1024px) {
+    width: ${(props) => (props.hideOnBreak ? '100%' : '50%')};
+  }
 `;
 
 export const Image = styled.img<IImageProps>`
